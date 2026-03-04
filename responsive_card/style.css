@@ -55,7 +55,6 @@
   object-fit: cover;
   border: 3px solid #fff;
   border-radius: 50%;
-  
 }
 .profile_card .name h1 {
   font-size: 20px;
@@ -103,4 +102,17 @@
 }
 .analytics .data:last-child {
   border-right: none;
+}
+
+@media (max-width: 480px) {
+  .buttons {
+    flex-direction: column;
+  }
+  
+  .analytics .data{
+    border-right: none;
+    gap: 0;
+    padding: 0 5px;
+    
+  } 
 }
