@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #322c2c;
+  padding: 10px 50px;
+}
+nav {
+  max-width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_logo a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 10px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.menu a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.hero_section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./simple-website-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero_section .title {
+  color: #fff;
+  font-size: 46px;
+  font-weight: 700;
+}
+.hero_section .sub_title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+.hero_section .btns {
+  margin-top: 20px;
+}
+.btns button {
+  padding: 8px 22px;
+  font-size: 14px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin: 0 5px;
+
+  outline: none;
+  background-color: #fff;
+  transition: all 1s ease;
+}
+.btns button:nth-of-type(1) {
+  color: #fff;
+  background-color: transparent;
+}
+.btns button:nth-of-type(1):hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media(max-width:460px){
+  header{
+    position:static;
+  }
+ nav{
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ nav .menu{
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .menu a{
+  display: block;
+  width: 100%;
+  text-align: center;
+ }
+
+ .hero_section{
+   text-align: center;
+ }
+
+ .hero_section .title{
+  font-size: 25px;
+ }
+ .hero_section .sub_title{
+  font-size: 23px;
+ }
+ .btns{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+ }
+ .btns button{
+  padding: 5px 17px;
+  font-size: 14px;
+ }
+}
